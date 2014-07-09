@@ -16,7 +16,7 @@ namespace TesteEnum.Conversores
         {
             if (value is TipoDeEspessura)
             {
-                return Util.Util.GetDescricaoDoEnum((TipoDeEspessura) value);
+                return Util.Util.PegarDescricaoDoEnum((TipoDeEspessura) value);
             }
             return value.ToString();
         }
@@ -31,7 +31,7 @@ namespace TesteEnum.Conversores
 
             IEnumerable<TipoDeEspessura> todosOsTiposDeEspessura = Enum.GetValues(typeof (TipoDeEspessura)).Cast<TipoDeEspessura>();
 
-            var descricaoPorTipoDeEspessura = todosOsTiposDeEspessura.ToDictionary(tipoEspessura => Util.Util.GetDescricaoDoEnum(tipoEspessura));
+            var descricaoPorTipoDeEspessura = todosOsTiposDeEspessura.ToDictionary(tipoEspessura => Util.Util.PegarDescricaoDoEnum(tipoEspessura));
 
             if (descricaoPorTipoDeEspessura.ContainsKey(descricao))
             {

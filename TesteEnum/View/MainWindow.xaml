@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:conversores="clr-namespace:TesteEnum.Conversores"
         xmlns:viewModel="clr-namespace:TesteEnum.ViewModel"
-        Title="MainWindow" Height="80" Width="525">
+        Title="MainWindow" Height="80" Width="525" MaxHeight="80" ResizeMode="NoResize">
     <Window.DataContext>
         <viewModel:MainWindowViewModel />
     </Window.DataContext>
