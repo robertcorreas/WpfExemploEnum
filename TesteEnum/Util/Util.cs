@@ -6,7 +6,7 @@ namespace TesteEnum.Util
 {
     public static class Util
     {
-        public static string GetEnumDescription(Enum value)
+        public static string GetDescricaoDoEnum(Enum value)
         {
             FieldInfo fi = value.GetType().GetField(value.ToString());
             var attributes = (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);

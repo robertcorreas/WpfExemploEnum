@@ -16,7 +16,7 @@ namespace TesteEnum.Conversores
 
                 foreach (var tipoEspessura in (IList<TipoDeEspessura>)value)
                 {
-                    listaConvertida.Add(Util.Util.GetEnumDescription((tipoEspessura)));
+                    listaConvertida.Add(Util.Util.GetDescricaoDoEnum((tipoEspessura)));
                 }
 
                 return listaConvertida;
